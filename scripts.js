@@ -4,6 +4,13 @@ let USD2VND = function(a){
 }
 USD2VND(10) // Goi gia tri cua a
 
+let USDToVND = function() {
+    let a = prompt("Nhập số USD bạn muốn quy đổi");
+    let vnd = a * 23500; // Công thức quy đổi 
+    console.log(`${a}USD đổi được ${vnd}VND`)
+}
+USDToVND()
+
 let compoundInterrest = function (P,r) {
     let A = P * (1 + r / 1)**(1 * 10);
     console.log (`Tiền lãi gửi theo năm sau 10 năm của bạn là: ${A}VND`);
